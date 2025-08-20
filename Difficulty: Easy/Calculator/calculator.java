@@ -1,16 +1,13 @@
 class Solution {
-    public static void utility(int a, int b, int opr) {
-        if(opr==1){
-            System.out.print(a+b);
-        }
-        else if(opr==2){
-            System.out.print(a-b);
-        }
-        else if(opr==3){
-            System.out.print(a*b);
-        }
-        else{
-            System.out.print("Invalid Input");
+    public void calculate(int a, int b, int operator) {
+        if (operator == 1) {
+            System.out.println(a + b);
+        } else if (operator == 2) {
+            System.out.println(b - a);
+        } else if (operator == 3) {
+            System.out.println(a * b);
+        } else {
+            System.out.println("Invalid Input");
         }
     }
 }
