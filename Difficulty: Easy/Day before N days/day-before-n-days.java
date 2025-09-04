@@ -1,9 +1,14 @@
-// User function Template for Java
 class Solution {
-    public static int nthDay(int d, int n) {
-        // write your code here
-        int e = n%7;
-        int r = (d-e+7)%7;
-        return r;
+    public int dayBefore(int d, int n) {
+         if(d>n) {
+            return d-n;
+        }
+        else {
+            n=n%7;
+            n=7-n;
+            return d+n;
+        }
+        // code here
+        
     }
 }
