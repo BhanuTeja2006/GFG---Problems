@@ -1,16 +1,9 @@
-// User function Template for Java
 class Solution {
-    public static int nFactorial(int n) {
-        int ans = 1;
-        int i = 1;
-
-        // Write your code here
-        while(i<=n){
-            ans = ans*i;
-            i++;
-            
+    public int factorial(int n) {
+        int fact = 1;
+        for(int i=1;i<=n;i++){
+            fact*=i;
         }
-
-        return ans;
+        return fact;
     }
 }
