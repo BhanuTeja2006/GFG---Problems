@@ -1,9 +1,11 @@
 class Solution {
-    public static void divisor(int n) {
-        for (int i = 1; i <= n; i++) {
-            if (n % i == 0) {  
-                System.out.print(i + " ");
+    void printDivisors(int n) {
+        // code here
+         for(int i=1;i<=n;i++){
+            if(n%i==0){
+                System.out.print(i+" ");
             }
         }
+        
     }
 }
