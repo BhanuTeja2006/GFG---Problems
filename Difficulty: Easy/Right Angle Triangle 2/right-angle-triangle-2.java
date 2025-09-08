@@ -1,14 +1,24 @@
 class Solution {
-    public static void triangle(int s) {
-        for (int i = 0; i < s; i++) {
-            for (int j = 0; j <= i; j++) {
-                if (j == 0 || i == s - 1 || i == j) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+    public void printPattern(int n) {
+        
+       for(int i = 1;i<=n;i++){
+           
+           for(int j=1;j<=i;j++){
+              if(j==1 || j==i || i==n){
+                System.out.print("*");
             }
-            System.out.println();
-        }
+            
+            else {
+                System.out.print(" ");
+            }
+            
+            if(j<i || i==n){
+                System.out.print(" ");
+            }
+       }
+       
+       System.out.println();
     }
+    
+  }
 }
