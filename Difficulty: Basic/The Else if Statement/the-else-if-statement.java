@@ -1,14 +1,18 @@
-class Solution {
-    public static void utility(int number) {
-        if(number > 100){
-            System.out.println("Big");
+import java.util.*;
+
+public class Solution {
+    public static void solve() {
+        // Your Code Here
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>100){
+            System.out.print("Big");
         }
-        else if(number < 10){
-            System.out.println("Small");
+        else if(a<10){
+            System.out.print("Small");
         }
         else{
-            System.out.println("Number");
+            System.out.print("Number");
         }
-        // Write the if, else if, else statements below
     }
 }
