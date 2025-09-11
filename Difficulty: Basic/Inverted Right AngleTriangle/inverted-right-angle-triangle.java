@@ -1,10 +1,9 @@
-// User function Template for Java
 class Solution {
-    public static void invTriangleWall(int s) {
-
-        // Write your code here
-        for(int i=0;i<s;i++){
-            for(int j=s-i;j>=1;j--){
+    public void printPattern(int n) {
+        // Code here
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(i+j>=n) break;
                 System.out.print("* ");
             }
             System.out.println();
