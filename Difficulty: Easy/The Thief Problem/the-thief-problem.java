@@ -1,17 +1,12 @@
-// User function Template for Java
-
 class Solution {
-    public static int getMaxVal(int arr[], int k) {
-        // Your code here
-        Integer[] temp = new Integer[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            temp[i] = arr[i];
+    public int getMaxVal(List<Integer> arr, int k) {
+        // code here
+        int total = 0;
+        Collections.sort(arr);
+        int n = arr.size();
+        for(int i=n-k;i<n;i++){
+            total+=arr.get(i);
         }
-        Arrays.sort(temp, Collections.reverseOrder());
-        int sum = 0;
-        for (int i = 0; i < k; i++) {
-            sum += temp[i];
-        }
-        return sum;
+        return total;
     }
 }
