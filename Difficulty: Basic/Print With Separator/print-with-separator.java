@@ -3,9 +3,7 @@ public class Solution {
         String a = scn.nextLine();
         String b = scn.nextLine();
         String separator = scn.nextLine();
-        StringBuilder rev=new StringBuilder();
-        rev.append(a+separator+b);
-        System.out.println(rev);
         // print with seperator
+        System.out.println(a+separator+b);
     }
 }
