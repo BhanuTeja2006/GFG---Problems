@@ -3,7 +3,8 @@
 class Solution {
     public static String reverseString(String s) {
         // code here
-        StringBuilder rev = new StringBuilder(s).reverse();
-        return rev.toString();
+        StringBuilder str = new StringBuilder(s);
+        str = str.reverse();
+        return str.toString();
     }
 }
